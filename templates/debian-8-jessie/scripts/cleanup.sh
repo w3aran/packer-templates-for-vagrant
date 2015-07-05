@@ -1,3 +1,5 @@
+#!/bin/sh
+
 # Clean up
 apt-get -y remove linux-headers-$(uname -r) build-essential
 apt-get -y autoremove
@@ -19,12 +21,3 @@ echo "pre-up sleep 2" >> /etc/network/interfaces
 
 # Clear wtmp
 cat /dev/null > /var/log/wtmp
-
-# Zero out the free space to save space in the final image:
-dd if=/dev/zero of=/EMPTY bs=1M
-rm -f /EMPTY
-
-# Sync to ensure that the delete completes before this moves on.
-sync
-sync
-sync
