@@ -7,7 +7,7 @@
     "ssh_wait_timeout": "10000s",
     "iso_url": "http://cdimage.debian.org/mirror/cdimage/archive/8.0.0/i386/iso-cd/debian-8.0.0-i386-netinst.iso",
     "iso_md5": "72045f21b78824023ad665c2ef387c26",
-    "vm_name": "debian-800-jessie-32bit"
+    "vm_name": "debian-8-jessie-32bit"
   },
   "builders": [
     {
